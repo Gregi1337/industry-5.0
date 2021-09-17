@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>INDUSTRY 5.0</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&display=swap" rel="stylesheet">
+
+	
+</head>
+<body>
+
+<div class="topfixedmenu">
+<ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">About</a></li>
+    
+</div>    
+<br><br>    
+<center><h1>AMBASSADORS IN 55 COUNTRIES</h1>
+<p><b>WE ARE BUILDING</b> a <b>WASTELESS WORLD</b> without <b>WASTE</b> and wasting in all its forms and <b>PREVENT WASTE</b> from <b>HAPPENING</b>.</p>
+</center>
+
+
+<div id="mapid" style="width: max; height: 600px;"></div>
+<script>
+
+	var mymap = L.map('mapid').setView([51.505, -0.09], 2.75);
+
+	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery � <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox/streets-v11',
+		tileSize: 512,
+		zoomOffset: -1,
+        
+	}).addTo(mymap);
+    
+    /*CZECHIA*/
+    var marker = L.marker([49.7, 15.3]).addTo(mymap);
+    marker.bindPopup("<b>Czechia</b><br>Michal Gregor<br><a href='https://www.linkedin.com/in/gregormichal/'>LinkedIn profile</a>");
+    
+     /*GERMANY*/
+    var marker = L.marker([50.9813, 9.8242]).addTo(mymap);
+    marker.bindPopup("<b>Germany</b><br>Michal Gregor<br><a href='https://www.linkedin.com/in/gregormichal/'>LinkedIn profile</a>");
+
+    /*POLAND*/
+    var marker = L.marker([52.6651, 19.1406]).addTo(mymap);
+    marker.bindPopup("<b>Poland</b><br>Mariusz Bednarek<br><a href='https://www.linkedin.com/in/mariusz-bednarek-2b70a831/'>LinkedIn profile</a>");
+
+    /*AUSTRIA*/
+    var marker = L.marker([47.4824, 14.0430]).addTo(mymap);
+    marker.bindPopup("<b>Austria</b><br>Michal Gregor<br><a href='https://www.linkedin.com/in/gregormichal/'>LinkedIn profile</a>");
+
+    /*RUSSIA*/
+    var marker = L.marker([57.7705, 41.3770]).addTo(mymap);
+    marker.bindPopup("<b>Russia</b><br>Michal Gregor<br><a href='https://www.linkedin.com/in/gregormichal/'>LinkedIn profile</a>");
+ 
+    /*USA*/
+    var marker = L.marker([39.4559, -98.0175]).addTo(mymap);
+    marker.bindPopup("<b>USA</b><br>Scott Krauger<br><a href='https://www.linkedin.com/in/scottkrauger/'>LinkedIn profile</a>");
+    
+    /*CANADA*/
+    var marker = L.marker([59.7692, -104.3456]).addTo(mymap);
+    marker.bindPopup("<b>USA</b><br>Michal Gregor<br><a href='https://www.linkedin.com/in/gregormichal/'>LinkedIn profile</a>");
+ 
+    /*UK*/
+    var marker = L.marker([51.9871, -1.7333]).addTo(mymap);
+    marker.bindPopup("<b>United Kingdom</b><br>Michal Gregor<br><a href='https://www.linkedin.com/in/gregormichal/'>LinkedIn profile</a>");
+ 
+    /*MEXICO*/
+    var marker = L.marker([20.7389, -101.4452]).addTo(mymap);
+    marker.bindPopup("<b>Mexico</b><br>Michal Gregor<br><a href='https://www.linkedin.com/in/gregormichal/'>LinkedIn profile</a>");
+ 
+    /*INDIA*/
+    var marker = L.marker([22.2198656, 79.0779631]).addTo(mymap);
+    marker.bindPopup("<b>India</b><br>SHIV Rao Challa<br><a href='https://www.linkedin.com/in/shivchalla/'>LinkedIn profile</a>");
+ 
+    /*GHANA*/
+    var marker = L.marker([8.0939422, -1.0782869]).addTo(mymap);
+    marker.bindPopup("<b>Ghana</b><br>David Ewusi-Mensah<br><a href='https://www.linkedin.com/in/david-ewusi-mensah-a1100188/'>LinkedIn profile</a>");
+ 
+     /*VIETNAM*/
+    var marker = L.marker([11.2020183, 107.2578947]).addTo(mymap);
+    marker.bindPopup("<b>Vietnam</b><br>Michael Tu?n Ebright<br><a href='https://www.linkedin.com/in/michael-tu%E1%BA%A5n%E2%80%9D-ebright-60a68014a/'>LinkedIn profile</a>");
+ 
+    /*BELARUS*/
+    var marker = L.marker([53.8926297, 27.7168789]).addTo(mymap);
+    marker.bindPopup("<b>Belarus</b><br>Elena Lazarovskaya<br><a href='https://www.linkedin.com/in/elena-lazarovskaya/'>LinkedIn profile</a>");
+ 
+    /*FINLAND*/
+    var marker = L.marker([62.1356900, 26.4204922]).addTo(mymap);
+    marker.bindPopup("<b>Finland</b><br>Armela Totaj<br><a href='https://www.linkedin.com/in/armela-totaj-corporate-trainer-service-designer/'>LinkedIn profile</a>");
+ 
+    /*INDONESIA*/
+    var marker = L.marker([-2.0466342, 115.2779142]).addTo(mymap);
+    marker.bindPopup("<b>Indonesia</b><br>Muhaim in Iqbal<br><a href='https://www.linkedin.com/in/iqbalmuhaimin/'>LinkedIn profile</a>");
+ 
+    /*TURKEY*/
+    var marker = L.marker([39.0761039, 33.4956875]).addTo(mymap);
+    marker.bindPopup("<b>Turkey</b><br>Bilal Egin<br><a href='https://www.linkedin.com/in/bilal-egin-3439485/'>LinkedIn profile</a>");
+ 
+    /*BELGIUM*/
+    var marker = L.marker([50.5669883, 4.7554533]).addTo(mymap);
+    marker.bindPopup("<b>Belgium</b><br>Rudi Plettinx<br><a href='https://www.linkedin.com/in/rudiplettinx/'>LinkedIn profile</a>");
+ 
+    /*JORDAN*/
+    var marker = L.marker([31.1345114, 36.2422697]).addTo(mymap);
+    marker.bindPopup("<b>Jordan</b><br>Ghazi Masoud<br><a href='https://www.linkedin.com/in/ghazi-masoud-81412010b/'>LinkedIn profile</a>");
+ 
+    /*BRAZIL*/
+    var marker = L.marker([-10.2211806, -52.0218906]).addTo(mymap);
+    marker.bindPopup("<b>Brazil</b><br>Aline Caltabiano<br><a href='https://www.linkedin.com/in/aline-caltabiano-97bb8527/'>LinkedIn profile</a>");
+ 
+    /*TUNISIA*/
+    var marker = L.marker([35.1587992, 9.5015469]).addTo(mymap);
+    marker.bindPopup("<b>Tunisia</b><br>Aida Chaieb<br><a href='https://www.linkedin.com/in/aida-chaieb-7a8198171/'>LinkedIn profile</a>");
+ 
+    /*SPAIN*/
+    var marker = L.marker([39.2520683, -3.3304842]).addTo(mymap);
+    marker.bindPopup("<b>Spain</b><br>Konstantin Knapp<br><a href='https://www.linkedin.com/in/knappkonstantin/'>LinkedIn profile</a>");
+ 
+    /*NIGERIA*/
+    var marker = L.marker([8.4107417, 7.6997892]).addTo(mymap);
+    marker.bindPopup("<b>Nigeria</b><br>Martha Okiya<br><a href='https://www.linkedin.com/in/okiyamartha/'>LinkedIn profile</a>");
+ 
+ 
+</script>
+
+<center>
+<h2>What is INDUSTRY 5.0?</h2>
+
+    <div class="text-mainpage">
+        <div class="main-image">
+            <img src="img/50_logo.png" width="325" height="325" alt="Logo Industry 5.0">
+        </div>
+            
+        <p>INDUSTRY 5.0 is one of the main existing applicable sustainable development business in combination with the upcycling-related industries, launched by <a href="https://michael-rada.medium.com/industry-5-0-definition-6a2f9922dc48">Michael Rada in 2015</a>. As of 2021 with <b>more than 50+ ambassadors</b> spread across each country.<br><br>
+
+        The aim of Industry 5.0 is to build up a global network targeting the <b>prevention of industrial waste to happen</b>, so as eliminate the permanently increasing number of unused industrial so as residential sites and the number of unemployed worldwide. An industry that does not speak about sustainability but producing sustainability on a global level.<br><br>
+
+        Existing INDUSTRY 5.0 waste categories being prevented are; PHYSICAL WASTE, SOCIAL WASTE, URBAN WASTE and PROCESS WASTE. Industry 5.0 applies the principles of LOGISTICS EFFICIENCY DESIGN (L.E.D.), these are:</p><br><br>
+    </div>
+        <div class="text-mainpage2">
+            <div class="box">
+        
+                <div class="service1">
+                     <b>TRANSPARENCY for all and everything.</b><br>
+                </div>
+            
+                <div class="service2">
+                    <b>PROFIT SHARING between all contributors and value-adding members.</b><br>
+                </div>
+            
+                <div class="service3">
+                    <b>EFFICIENCY in a global complex chain.</b><br>
+                </div>
+            
+            </div>
+         </div>   
+            
+         <div class="text-mainpage">
+            <p>INDUSTRY 5.0 is here to change the world of business so as to reduce the negative impact of global industries and supply chains on our environment. Industry 5.0 AMBASSADORS are HUMANS that represents the INDUSTRY 5.0 principles on a national level in a globally harmonized action.
+
+                Associated with INDUSTRY 5.0 AMBASSADORS NETWORK, which can be also found on <a href="https://www.linkedin.com/company/industry-5-0/">LinkedIn</a>.</p>
+         </div>
+
+</div>
+</center>
+
+
+<div class="footer">
+    <p>&copy; INDUSTRY 5.0
+</div>
+
+</body>
+</html>

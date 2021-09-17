@@ -1,0 +1,129 @@
+body {
+ background-color: white;
+ font-family: 'PT Serif', serif;
+ }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+
+.active {
+  background-color: #aa0000;
+}/* CSS Document */
+
+h1 {
+   font-family: 'Roboto', sans-serif;
+    color: #aa0000;
+}
+
+h2 {
+   font-family: 'Roboto', sans-serif;
+    color: #aa0000;
+}
+
+.main-image {
+    padding-right: 20px;
+}
+
+.text-mainpage {
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 20px;
+    font-size: 17px;
+    }
+    
+.text-mainpage2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    }    
+    
+.text-mainpage a:link {
+    color: #aa0000;
+    }
+    
+.text-mainpage a:visited {
+    color: #aa0000;
+    }
+    
+.text-mainpage a:hover {
+    color: red;
+    }
+    
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    }    
+    
+.service1 {
+    border-style: solid;
+    border-color: #aa0000;
+    broder-width: 10px;
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }    
+    
+.service1:hover {
+    background-color: #f0f0f5;
+    }
+    
+.service2 {
+    border-style: solid;
+    border-color: #aa0000;
+    broder-width: 10px;
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }    
+    
+.service2:hover  {
+    background-color: #f0f0f5;
+    }
+    
+.service3 {
+    border-style: solid;
+    border-color: #aa0000;
+    broder-width: 10px;
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }  
+    
+.service3:hover {
+    background-color: #f0f0f5;
+    }
+    
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    color: white;
+}
